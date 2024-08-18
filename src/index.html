@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="form.css">
+        <title>Formulário</title>
+    </head>
+
+    <body>
+        <div id="titulo">
+            <h1> Seja bem vindo! </h1>
+            <h2>Realize seu Cadastro</h2>
+        </div>
+
+        <form>
+            <fieldset>
+                <legend>Formulário</legend>
+                <p id="pergunta01"> 
+                    <label for="pronome">Qual o seu pronome de tratamento?</label>
+                    <select name="pronomes" id="pronome">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="opcao1">Senhor</option>
+                        <option value="opcao2">Senhora</option>
+                        <option value="opcao2">Outro</option>
+                        <option value="opcao0">Não desejo informar</option>
+                    </select>
+                </p>
+
+                <p id="pergunta02">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome">
+                </p>
+
+                <p id="pergunta03">
+                    <label for="data">Sua data de nascimento:</label>
+                    <input type="date" id="data">
+                </p>
+
+                <p id="pergunta04">
+                    <label for="CPF">CPF:</label>
+                    <input type="text" id="CPF" placeholder="000.000.000-00">
+                </p>
+                
+                <p id="pergunta05">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" placeholder="(00) 0000-0000">
+                </p>
+
+                <p id="pergunta06">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email">
+                </p>
+
+                <div id="info-loc">
+                    <p id="pergunta07">
+                        <label for="CEP">CEP:</label>
+                        <input type="text" id="CEP" placeholder="00000-000">
+                    </p>
+
+                    <p id="pergunta08">
+                        <label for="numero">Número da residência:</label>
+                        <input type="number" id="numero">
+                    </p>
+
+                    <p id="pergunta08">
+                        <label for="logradouro">Logradouro:</label>
+                        <input type="text" id="logradouro">
+                    </p>
+
+                    <p id="pergunta09">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro">
+                    </p>
+
+                    <p id="pergunta10">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade">
+                    </p>
+                    
+                    <p id="pergunta11">
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado">
+                    </p>
+
+                    <p id="pergunta12">
+                        <label for="ponto">Ponto de referência:</label>
+                        <br>
+                        <textarea id="ponto" rows="5" cols="33" placeholder="Digite o ponto de referência aqui..."></textarea>
+                    </p>
+                </div>
+            </fieldset>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    </body>
+</html>
